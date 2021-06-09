@@ -1,38 +1,102 @@
 ---
 layout: post
-title: Rest in the woods
-date: 2017-10-09 17:33:29 +0300
+title: 백준 16917번 문제 풀이
+date: 2021-06-09 14:33:29 +0300
 img: 18.jpg
 tags: Rest
 ---
-Literally lomo blue bottle pabst retro snackwave brooklyn taiyaki bitters. Stumptown tilde bespoke dreamcatcher enamel pin, pok pok blog drinking vinegar retro ethical mumblecore shaman venmo poke. Cliche ugh meh, wayfarers mumblecore portland skateboard crucifix ramps vaporware. Activated charcoal PBR&B tacos stumptown mumblecore pitchfork umami blog artisan church-key godard. Shabby chic meh lyft, tilde pork belly echo park +1 tote bag tofu. Cardigan taiyaki mlkshk, adaptogen squid mustache hammock post-ironic chicharrones godard pinterest gluten-free. Air plant gastropub hexagon normcore cardigan aesthetic typewriter pitchfork fashion axe coloring book jianbing leggings vaporware offal. Bushwick palo santo leggings four dollar toast truffaut gluten-free. Fashion axe lo-fi vexillologist kinfolk. Authentic sriracha affogato, tofu polaroid enamel pin poke. Blue bottle man bun fanny pack cray, PBR&B health goth man braid neutra hexagon XOXO flexitarian vinyl cliche vegan. Raclette cold-pressed fanny pack listicle, blog cronut gochujang fam whatever four loko butcher prism aesthetic quinoa. Raclette thundercats gluten-free tbh, ethical adaptogen keffiyeh fam. Swag distillery pop-up offal. Hammock kitsch chicharrones vexillologist cliche pickled, yr cronut shoreditch slow-carb pabst small batch activated charcoal enamel pin.
 
-Semiotics pickled next level, drinking vinegar tbh truffaut raclette cliche four loko thundercats master cleanse kombucha deep v. Enamel pin authentic sartorial, bitters paleo taiyaki vegan salvia. Sriracha knausgaard deep v, irony ramps hammock YOLO raclette. Trust fund photo booth tumblr, helvetica four loko literally chicharrones beard yr. Cronut PBR&B XOXO palo santo tbh craft beer, crucifix tumblr. Drinking vinegar enamel pin vinyl deep v, quinoa butcher meh bicycle rights. Jianbing neutra iceland salvia ennui. Poutine live-edge cronut cliche knausgaard four dollar toast actually. Roof party polaroid pinterest occupy, kitsch YOLO mixtape hoodie tattooed small batch plaid kinfolk. Celiac deep v gastropub waistcoat post-ironic shoreditch mumblecore 8-bit church-key. Try-hard PBR&B aesthetic quinoa, trust fund lomo poke. Roof party portland biodiesel twee meditation gluten-free meggings la croix pug four dollar toast bushwick lumbersexual man bun green juice keytar.
 
-### You need a little dummy text
+<script src="https://gist.github.com/RAMA4368/5b184a52bc37c2bcbc6373362caae7d6.js"></script>
 
-1. Wayfarers air plant tousled gluten-free synth.
-2. Tumeric taxidermy iPhone, thundercats lo-fi you.
-3. Heard of them deep v art party raclette irony cred vegan tattooed.
-4. Migas four loko tumblr literally subway tile occupy vape.
-5. Fixie copper mug beard, scenester normcore vape.
+- - -
 
-Humblebrag sartorial copper mug offal yr crucifix. Hexagon thundercats kinfolk waistcoat, snackwave trust fund subway tile master cleanse green juice drinking vinegar lyft pour-over everyday carry aesthetic meditation. Gochujang jean shorts plaid vinyl man braid. Hell of YOLO quinoa kombucha ethical. Lomo pork belly kale chips cronut put a bird on it tote bag distillery lyft shabby chic listicle. Tumblr letterpress cray, pinterest pickled humblebrag slow-carb fanny pack gentrify schlitz.
 
-Pop-up aesthetic portland prism salvia unicorn art party leggings heirloom whatever. Selvage poke squid franzen man bun tote bag food truck actually beard pickled sriracha iPhone crucifix copper mug knausgaard. Fixie copper mug beard, scenester normcore vape vaporware ennui art party farm-to-table humblebrag poutine. Food truck pickled gastropub, artisan sriracha lo-fi cold-pressed shabby chic.
+<pre>
+<```
+package programmers;
 
-Hell of letterpress gentrify single-origin coffee pork belly. Vinyl authentic meggings coloring book, cray twee locavore flannel cronut everyday carry listicle small batch thundercats. 3 wolf moon before they sold out brunch selvage. Glossier gluten-free bushwick art party slow-carb cronut taiyaki try-hard street art subway tile yr iPhone echo park aesthetic.
+import java.util.Scanner;
+/*
+ 1<= A,B,C <= 5000
+ * 1<= X,Y <=100000
+ *  양념치킨 A 원
+ *  후라이드치킨 B 원
+ *  반반치킨 한마리 C 원
+ *  
+ *  ========구조 파악=================
+ * 1)  (A+B) 가격이 2*C가격보다 크면 반반먼저 산다.
+ * 2)  X>Y면  Y개까지만 산다
+ * 3)  그리고  X-Y개를 더산다.
+ * 4)  A보다 2*C가 더싸면 (x-y)*2*C를 더하자
+ * 5)  아니고 A가 더 싸면 (X-Y)*A로 사자
+ * 6)  같으면 (X-Y)2*C로 사자 (그냥 치킨많을수록 조으니까)
+ * ==============================
+ *
+ * */
 
-![Forest]({{site.baseurl}}/images/pages/18.jpg)
+/**
+ *
+ * @작성자: sue
+ * @작성일 : 2021.06.08
+ * @도와준사람 : 현딕
+ *
+ */
 
-Prism blog everyday carry, post-ironic ennui readymade bushwick hell of wayfarers offal af XOXO mlkshk shoreditch. Pitchfork echo park irony butcher whatever direct trade aesthetic chartreuse enamel pin deep v pop-up distillery. Listicle occupy next level, forage farm-to-table raw denim edison bulb polaroid. Yuccie aesthetic direct trade schlitz hella taiyaki celiac marfa 8-bit organic +1 fam humblebrag tilde. Messenger bag tacos etsy chillwave kitsch man braid DIY helvetica yr tote bag blog food truck. Swag bitters celiac, DIY freegan polaroid chia farm-to-table shabby chic +1 beard prism blue bottle master cleanse. Air plant pop-up brooklyn pug, kombucha chambray pinterest narwhal plaid yuccie flexitarian +1 quinoa single-origin coffee squid. Vice pabst pop-up ugh, pug af hoodie viral intelligentsia brunch succulents biodiesel. Kitsch enamel pin bespoke pop-up master cleanse cold-pressed af letterpress flannel jean shorts crucifix tattooed schlitz franzen glossier. Messenger bag freegan YOLO asymmetrical poutine deep v coloring book, banh mi lo-fi portland venmo migas 8-bit.
+public class Chicken2 {
 
-Bushwick try-hard occupy crucifix before they sold out craft beer. Mixtape brooklyn roof party tilde vape. Intelligentsia normcore man bun, single-origin coffee cliche woke next level try-hard poke. Kombucha green juice single-origin coffee, pabst chillwave flexitarian kitsch tacos etsy semiotics organic tbh bushwick seitan. Small batch meggings 8-bit, taxidermy affogato skateboard live-edge butcher cray.
-> Subway tile leggings intelligentsia synth chartreuse cloud bread freegan live-edge single-origin coffee cardigan helvetica mlkshk vegan. Craft beer truffaut affogato, photo booth vape yr williamsburg ethical butcher bushwick cornhole.
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 
-Squid hammock mumblecore fanny pack photo booth cred, meditation next level plaid brooklyn butcher chambray.
-Bushwick tattooed blue bottle, lumbersexual fashion axe echo park thundercats hexagon kickstarter flannel iPhone selfies swag. Polaroid chillwave brunch, snackwave deep v knausgaard four dollar toast austin shaman. Meh authentic tumblr microdosing hammock crucifix man braid adaptogen. Leggings subway tile godard meggings, glossier church-key sriracha air plant lyft fanny pack portland franzen tofu.
+		System.out.println("양념치킨, 후라이드, 반반치킨 가격과 양념치킨과 후라이드치킨의 최소 수량을 순서대로 입력하세요.");
 
-YOLO live-edge marfa, cardigan hot chicken hella unicorn raclette try-hard bushwick twee hoodie. Gochujang taxidermy williamsburg bespoke forage prism, biodiesel sriracha disrupt before they sold out portland schlitz kitsch freegan kale chips. Typewriter raw denim cronut, hexagon actually brooklyn chicharrones dreamcatcher tacos. Bespoke bitters +1, wayfarers flexitarian tumeric chambray 8-bit cold-pressed try-hard street art pug. Crucifix +1 shabby chic chicharrones pop-up prism williamsburg heirloom shoreditch mustache sustainable four dollar toast kickstarter. Thundercats four dollar toast drinking vinegar bitters. +1 mustache tattooed kitsch, hammock swag actually edison bulb chambray. Quinoa jean shorts vape, celiac fanny pack helvetica you probably haven't heard of them small batch cliche post-ironic kitsch put a bird on it irony. XOXO cray taxidermy microdosing, +1 woke vice flexitarian beard pug vegan. Flannel health goth swag tofu distillery skateboard. Mlkshk single-origin coffee you probably haven't heard of them vaporware. Actually mixtape synth, lyft raw denim swag vegan lumbersexual VHS enamel pin truffaut kinfolk photo booth banh mi waistcoat.
+		int A = sc.nextInt();
+		int B = sc.nextInt();
+		int C = sc.nextInt();
+		int X = sc.nextInt();
+		int Y = sc.nextInt();
+		int sum = 0;
+		int test, test1 = 0; // 반반 가격이 더 쌀때, 조건별 값을 넣어줄 변수
 
-Skateboard butcher hexagon fashion axe bicycle rights scenester direct trade glossier drinking vinegar edison bulb leggings bitters marfa cred. Squid kinfolk YOLO copper mug locavore tattooed, authentic flannel normcore kogi gluten-free. Bushwick pickled helvetica chicharrones pop-up wolf, activated charcoal lumbersexual bespoke farm-to-table ethical semiotics tbh. Gentrify 8-bit live-edge, artisan man braid mustache cliche vice. Banh mi small batch yr meditation organic, cronut fashion axe. Forage plaid helvetica post-ironic hella. Raw denim edison bulb live-edge austin. Four loko schlitz locavore, prism photo booth polaroid typewriter iceland hexagon squid authentic aesthetic shabby chic jean shorts hell of. Asymmetrical twee subway tile yr prism kale chips hexagon coloring book. Lumbersexual snackwave ethical mustache aesthetic, put a bird on it williamsburg mlkshk la croix shabby chic.
+		// (A+B) 가격이 2*C 가격보다 크면 반반 먼저 산다.
+		if ((A + B) > 2 * C) {
+			// 반반 먼저 산다
+			if (X > Y) {
+				// X>Y 이면 Y의 갯수 *2 *C 를 곱한다. 그리고 남은 양념치킨 (X-Y)*A를 더해준다
+				test = (Y * 2 * C) + ((X - Y) * A);
+				// X>Y 여도 Y만큼 C 를 산 값이 더 저렴하다면 X*2*C 를 해준다
+				test1 = X * 2 * C;
+				if (test < test1) {
+					sum = test;
+				} else {
+					sum = test1;
+				}
+			} else if (X < Y) {
+				// X<Y 이면 X의 갯수 *2 *C 를 곱한다.그리고 남은 후라이드치킨 (X-Y)*B를 더해준다
+				test = (X * 2 * C) + ((Y - X) * B);
+				// X<Y 여도 Y만큼 C 를 산 값이 더 저렴하다면 Y*2*C 를 해준다
+				test1 = Y * 2 * C;
+				if (test < test1) {
+					sum = test;
+				} else {
+					sum = test1;
+				}
+			} else {
+				// X=Y 이면 둘중 아무거나 갯수 *2 *C 를 곱한다.
+				sum = X * 2 * C;
+			}
+			// 두개가격을 합친것보다 반반 2개가격이 더 많이 나가면 반반을 살필요 없으므로
+			// 양념과 후라이드를 개별로 산다
+		} else if ((A + B) < 2 * C) {
+			// 개별로 산다
+			sum = (X * A) + (Y * B);
+		}
+
+		System.out.println("결과값 :" + sum);
+
+	}
+}
+
+
+```
+</pre>
