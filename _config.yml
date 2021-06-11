@@ -1,13 +1,13 @@
 # Site settings
-title: Lokmont
+title: 라마코딩
 description: Lokmont is a responsive simple theme for Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lokmont-jekyll.netlify.com/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner Section
 hero: 112.jpg
-hero-title: Welcome to Lokmont
-hero-description: A Responsive Jekyll Blog Theme. Theme suitable for any kind of creators.
+hero-title: 라마코딩
+hero-description: 코더보단 프로그래머
 
 # Author - Creator
 author-name: Ben Campbell
